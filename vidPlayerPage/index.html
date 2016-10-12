@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TITLE</title>
+    <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+
+<body>
+  <!--http://spruto.com/player-constructor/get-code-->
+    <div class="player">
+      <script type="text/javascript" src="http://s3.spruto.org/embed/player.js"></script>
+      <script class="splayer">
+          var params = {
+              "playlist": [{
+                  "title": "",
+                  "posterUrl": "",
+                  "video": [{
+                      "url": "https://www.youtube.com/watch?v=yCXrgASzf50"
+                  }],
+                  "duration": 0
+              }],
+              "uiLanguage": "en",
+              "width": "640",
+              "height": "360",
+              "design": {
+                  "skinName": "basic",
+                  "color": {
+                      "scheme": "dark",
+                      "buttonBg": "#333333",
+                      "buttonNormal": "#FFFFFF",
+                      "buttonHover": "#97A841"
+                  },
+                  "logo": {
+                      "imageUrl": "",
+                      "clickUrl": "",
+                      "position": "tr"
+                  }
+              }
+          };
+          player.embed(params);
+      </script>
+    </div>
+</body>
+
+</html>
